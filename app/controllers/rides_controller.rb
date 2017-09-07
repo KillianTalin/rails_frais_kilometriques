@@ -1,4 +1,4 @@
-class RideController < ApplicationController
+class RidesController < ApplicationController
   # before_action :authenticate_user!, only: [:edit, :update, :destroy]
   def index
   end
