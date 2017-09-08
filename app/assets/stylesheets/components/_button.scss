@@ -1,0 +1,18 @@
+.btn-enregistrer {
+  color: #2a6496;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 2px solid;
+  opacity: 0.8;
+}
+
+.btn-enregistrer:hover {
+  opacity: 1;
+  color: #2a6496;
+  background-color: white;
+  border-color: #2a6496;
+}
