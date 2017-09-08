@@ -2,6 +2,7 @@ class RidesController < ApplicationController
   # before_action :authenticate_user!, only: [:edit, :update, :destroy]
     before_action :set_ride, only: [ :show, :edit, :update, :destroy]
   def index
+    @rides = Ride.all
   end
 
   def show
@@ -15,7 +16,7 @@ class RidesController < ApplicationController
     @ride = Ride.new(ride_params)
     @ride.user = current_user
     if @ride.save
-      redirect_to ride_path(@ride)
+      redirect_to rides_path
     else
       render :new
     end
