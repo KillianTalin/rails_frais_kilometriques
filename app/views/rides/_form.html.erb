@@ -1,0 +1,17 @@
+<%= simple_form_for(@ride) do |f| %>
+  <div class="row">
+    <div class="col-xs-6 form-group">
+      <%= f.input :date, as: :string, input_html: { class: "datepicker form-control" }, placeholder: "Date du trajet", label: "Date :" %>
+      <%= f.input :reason, placeholder:"Client, Prospect, Partenaire", label: "Motif :" %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6">
+      <%= f.input :start_place, placeholder:"Lieu de départ", label: "De :" %>
+      <%= f.input :end_place, placeholder:"Lieu d'arrivée", label: "A :" %>
+    </div>
+  </div>
+  <%= f.input :submit, :as => :boolean, label_html: { for: nil }, input_html: {checked: false, class: "selected"}, label: "Aller / Retour" %>
+<% end %>
+
+
