@@ -1,9 +1,18 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-      <% @rides.each do |ride| %>
-        <p> <%= ride.date %> - <%= ride.reason %> </p>
-        <p> <%= ride.ride_kilometer %>km</p>
+    <h2> Mon historique </h2>
+      <% @rides_sorted.each do |ride| %>
+        <div class="history">
+          <div class="history-date">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <p class="date"> <%= ride.date.strftime("%m/%d") %> </p>
+          </div>
+          <div class="history-text">
+            <p> <%= ride.ride_kilometer%>km - </p>
+            <p class="reason"> <%= ride.reason %> </p>
+          </div>
+        </div>
       <% end %>
     </div>
   </div>

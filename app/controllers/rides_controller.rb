@@ -3,6 +3,7 @@ class RidesController < ApplicationController
     before_action :set_ride, only: [ :show, :edit, :update, :destroy]
   def index
     @rides = Ride.all
+    @rides_sorted = @rides.sort_by { |ride| ride.date }.reverse!
   end
 
   def show
