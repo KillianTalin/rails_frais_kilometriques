@@ -1,7 +1,6 @@
 .history {
   display: flex;
   flex-direction: row;
-  border-radius: 3px;
   transition: all 0.15s ease;
 }
 
@@ -21,4 +20,23 @@
 
 .reason {
   margin-left: 20px;
+}
+
+.padding-bottom {
+  padding-bottom: 30px;
+}
+
+.history-elements {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px rgba(200, 200, 200, 0.5);
+  padding: 20px 10px 10px 30px;
+  border: 2px solid;
+  border-color: #2a6496;
+  opacity: 0.8;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
 }

@@ -1,19 +1,21 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-    <h2> Mon historique </h2>
-      <% @rides_sorted.each do |ride| %>
-        <div class="history">
-          <div class="history-date">
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-            <p class="date"> <%= ride.date.strftime("%m/%d") %> </p>
+    <h2 class="padding-bottom centered"> Mon historique </h2>
+      <div class="history-elements">
+        <% @rides_sorted.each do |ride| %>
+          <div class="history">
+            <div class="history-date">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <p class="date"> <%= ride.date.strftime("%m/%d") %> </p>
+            </div>
+            <div class="history-text">
+              <p> <%= ride.ride_kilometer%>km - </p>
+              <p class="reason"> <%= ride.reason %> </p>
+            </div>
           </div>
-          <div class="history-text">
-            <p> <%= ride.ride_kilometer%>km - </p>
-            <p class="reason"> <%= ride.reason %> </p>
-          </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

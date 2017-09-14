@@ -1,8 +1,13 @@
 .margin-form {
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-.checkbox {
-  margin-bottom: 30px;
+.checkbox, #km_number {
+  margin-bottom: 20px;
+}
+
+#km_number {
+  font-size: 40px;
+  font-weight: 500;
 }
