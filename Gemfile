@@ -17,6 +17,8 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'rails-assets-bootstrap-datepicker', source: 'https://rails-assets.org'
+gem 'sprockets', '>= 3.0.0.beta'
+gem 'sprockets-es6'
 
 group :development, :test do
   gem 'pry-byebug'
